@@ -483,6 +483,16 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [
 					{
@@ -499,7 +509,8 @@
 					},
 					{
 						"key": "authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJvY3RvcGVyZiIsImlkIjoiME1tWHhYMEJwN2hNVmlEc1JwRzYiLCJleHAiOjE2NTY0NTQxNjEsImlhdCI6MTY1NjM2Nzc2MSwiaGFzaCI6Ijc5M2ZhZTMzYmRjYzQ2YzMzZTJmMGE4NThhMTMwZGFhIn0.5PABhagKVL4mmO9lyDSkdNmCvhyCfCTNLKsT8Bws_iQ"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJvY3RvcGVyZiIsImlkIjoiME1tWHhYMEJwN2hNVmlEc1JwRzYiLCJleHAiOjE2NTY0NTQxNjEsImlhdCI6MTY1NjM2Nzc2MSwiaGFzaCI6Ijc5M2ZhZTMzYmRjYzQ2YzMzZTJmMGE4NThhMTMwZGFhIn0.5PABhagKVL4mmO9lyDSkdNmCvhyCfCTNLKsT8Bws_iQ",
+						"disabled": true
 					},
 					{
 						"key": "cookie",
